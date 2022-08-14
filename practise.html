@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Front-end task</title>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="offer-content">
+                <div class="star"><div class="fill-star"></div></div>
+                <p class="special-offer text-center text-white">پیشنهاد ویژه تکنوسل</p>
+            </div>
+            <div class="product-content text-white">
+                <p class="product-name">پروژکتور IR-NT Freestyle (Portable)</p>
+                <p class="product-price">قیمت: 4.000.000 تومان</p>
+                <button class="read-more text-white">جزئیات محصول</button>
+                <span class="lock"><img class="lock-vector" src="images/lock.png" /></span>
+                <span class="heart">
+                    <svg class="heart-vector" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.69001C1 3.60001 3.49 1.10001 6.56 1.10001C8.38 1.10001 9.99 1.98001 11 3.34001C12.01 1.98001 13.63 1.10001 15.44 1.10001C18.51 1.10001 21 3.60001 21 6.69001C21 13.69 14.52 17.82 11.62 18.81Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div>
+            <img class="projector" src="images/Layer4212 1.png">
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(".banner").hover(
+                    function () { },
+                    function () {
+                        $(".projector").addClass('projector-hover-off');
+                    }
+                );
+            });
+        </script>
+    </body>
+</html>
